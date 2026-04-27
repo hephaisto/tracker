@@ -72,7 +72,6 @@ def generate_new_code():
     return "".join(random.SystemRandom().choices(string.ascii_uppercase + string.ascii_lowercase + string.digits, k=access_code_length))
 
 master_access_code = generate_new_code()
-master_access_code = "xxx" # TODO: remove
 print(f"master access code is: {master_access_code}")
 
 engine = create_engine("sqlite:////root/data.sqlite", echo=True)
