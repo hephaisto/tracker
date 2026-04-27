@@ -38,6 +38,8 @@ frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
+greenlet==3.4.0
+    # via sqlalchemy
 h11==0.16.0
     # via
     #   httpcore
@@ -76,7 +78,7 @@ multidict==6.7.1
     #   aiohttp
     #   yarl
 nicegui==3.11.1
-    # via python-podman-dependabot-test (src/pyproject.toml)
+    # via tracker (src/pyproject.toml)
 orjson==3.11.8
     # via nicegui
 propcache==0.4.1
@@ -107,6 +109,8 @@ pyyaml==6.0.3
     # via uvicorn
 simple-websocket==1.1.0
     # via python-engineio
+sqlalchemy==2.0.49
+    # via tracker (src/pyproject.toml)
 starlette==1.0.0
     # via
     #   fastapi
@@ -119,6 +123,7 @@ typing-extensions==4.15.0
     #   nicegui
     #   pydantic
     #   pydantic-core
+    #   sqlalchemy
     #   typing-inspection
 typing-inspection==0.4.2
     # via
