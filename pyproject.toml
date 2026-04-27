@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-podman-dependabot-test"
+description = "Test package printing hello world for dependency management tests"
+dynamic= ["version"]
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = [""]
+authors = [
+  { name = "hephaisto" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "nicegui",
+]
+
+[project.urls]
+source = "https://github.com/hephaisto/python-podman-dependabot-test"
+
+[project.scripts]
+run-web-ui = "python_podman_dependabot_test.cmdline:main"
+
+[tool.hatch.version]
+source = "vcs"
+

@@ -1,0 +1,97 @@
+name: Build and push OCI image
+
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+
+    env:
+      IMAGE_NAME: python-podman-dependabot-test
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+
+      - name: install podman
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y podman
+
+      - name: Login to GHCR
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | \
+            podman login ghcr.io \
+              --username "${{ github.actor }}" \
+              --password-stdin
+
+      - name: Determine tags
+        id: vars
+        run: |
+          IMAGE="ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}"
+
+          # Always tag with commit SHA
+          echo "sha_tag=${IMAGE}:sha-${GITHUB_SHA}" >> $GITHUB_OUTPUT
+
+          # Tag latest only on main branch
+          if [[ "${GITHUB_REF}" == "refs/heads/main" ]]; then
+            echo "latest_tag=${IMAGE}:latest" >> $GITHUB_OUTPUT
+          fi
+
+          # If this is a semver tag like v1.2.3, generate semver tags
+          if [[ "${GITHUB_REF}" =~ refs/tags/v([0-9]+)\.([0-9]+)\.([0-9]+) ]]; then
+            MAJOR="${BASH_REMATCH[1]}"
+            MINOR="${BASH_REMATCH[2]}"
+            PATCH="${BASH_REMATCH[3]}"
+
+            echo "semver=${IMAGE}:${MAJOR}.${MINOR}.${PATCH}" >> $GITHUB_OUTPUT
+            echo "semver_major=${IMAGE}:${MAJOR}" >> $GITHUB_OUTPUT
+            echo "semver_minor=${IMAGE}:${MAJOR}.${MINOR}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build OCI image
+        run: |
+          ./build-container.sh "--cache-from=ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }} --cache-to=ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}"
+          LOCAL_IMAGE="${{ env.IMAGE_NAME }}:local"
+          # Retag local image into all required tags
+          podman tag "$LOCAL_IMAGE" "${{ steps.vars.outputs.sha_tag }}"
+
+          if [[ -n "${{ steps.vars.outputs.latest_tag }}" ]]; then
+            podman tag "$LOCAL_IMAGE" "${{ steps.vars.outputs.latest_tag }}"
+          fi
+
+          if [[ -n "${{ steps.vars.outputs.semver }}" ]]; then
+            podman tag "$LOCAL_IMAGE" "${{ steps.vars.outputs.semver }}"
+            podman tag "$LOCAL_IMAGE" "${{ steps.vars.outputs.semver_major }}"
+            podman tag "$LOCAL_IMAGE" "${{ steps.vars.outputs.semver_minor }}"
+          fi
+
+      - name: Run smoke test in image
+        run: ./test-ci.sh
+
+      - name: Push tags
+        run: |
+          # Always push SHA tag
+          podman push "${{ steps.vars.outputs.sha_tag }}"
+
+          # Push latest only on main
+          if [[ -n "${{ steps.vars.outputs.latest_tag }}" ]]; then
+            podman push "${{ steps.vars.outputs.latest_tag }}"
+          fi
+
+          # Push semver tags if present
+          if [[ -n "${{ steps.vars.outputs.semver }}" ]]; then
+            podman push "${{ steps.vars.outputs.semver }}"
+            podman push "${{ steps.vars.outputs.semver_major }}"
+            podman push "${{ steps.vars.outputs.semver_minor }}"
+          fi
