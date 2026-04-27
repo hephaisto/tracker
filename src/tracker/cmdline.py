@@ -11,7 +11,7 @@ def parse_args():
 
 def main():
     args = parse_args()
-    ui.run(title="dependency test", reload=False, host=args.hostname, port=args.port)
+    ui.run(title="Tracker", reload=False, host=args.hostname, port=args.port)
 
 if __name__ == '__main__':
     main()
