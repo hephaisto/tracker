@@ -114,8 +114,6 @@ def make_test_data():
             session.add_all([group])
             session.commit()
 
-make_test_data()
-
 
 @dataclass
 class Access:
