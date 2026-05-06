@@ -79,15 +79,15 @@ multidict==6.7.1
     #   yarl
 nicegui==3.11.1
     # via tracker (src/pyproject.toml)
-orjson==3.11.8
+orjson==3.11.9
     # via nicegui
 propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
-pydantic==2.13.3
+pydantic==2.13.4
     # via fastapi
-pydantic-core==2.46.3
+pydantic-core==2.46.4
     # via
     #   nicegui
     #   pydantic
