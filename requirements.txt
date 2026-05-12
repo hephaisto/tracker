@@ -52,7 +52,7 @@ httptools==0.7.1
     # via uvicorn
 httpx==0.28.1
     # via nicegui
-idna==3.13
+idna==3.14
     # via
     #   anyio
     #   httpx
@@ -81,7 +81,7 @@ nicegui==3.11.1
     # via tracker (src/pyproject.toml)
 orjson==3.11.9
     # via nicegui
-propcache==0.4.1
+propcache==0.5.2
     # via
     #   aiohttp
     #   yarl
@@ -101,7 +101,7 @@ python-engineio==4.13.1
     # via
     #   nicegui
     #   python-socketio
-python-multipart==0.0.27
+python-multipart==0.0.28
     # via nicegui
 python-socketio==5.16.1
     # via nicegui
