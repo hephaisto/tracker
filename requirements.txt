@@ -77,7 +77,7 @@ multidict==6.7.1
     # via
     #   aiohttp
     #   yarl
-nicegui==3.11.1
+nicegui==3.12.0
     # via tracker (src/pyproject.toml)
 orjson==3.11.9
     # via nicegui
