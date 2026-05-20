@@ -2,7 +2,7 @@
 #    uv pip compile /src/pyproject.toml -o /lockfiles/dependencies.lock
 aiofiles==25.1.0
     # via nicegui
-aiohappyeyeballs==2.6.1
+aiohappyeyeballs==2.6.2
     # via aiohttp
 aiohttp==3.13.5
     # via
@@ -23,7 +23,7 @@ attrs==26.1.0
     # via aiohttp
 bidict==0.23.1
     # via python-socketio
-certifi==2026.4.22
+certifi==2026.5.20
     # via
     #   httpcore
     #   httpx
@@ -38,7 +38,7 @@ frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
-greenlet==3.5.0
+greenlet==3.5.1
     # via sqlalchemy
 h11==0.16.0
     # via
@@ -67,7 +67,7 @@ lxml==6.1.1
     # via
     #   lxml-html-clean
     #   nicegui
-lxml-html-clean==0.4.4
+lxml-html-clean==0.4.5
     # via nicegui
 markdown2==2.5.5
     # via nicegui
