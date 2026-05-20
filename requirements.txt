@@ -143,5 +143,5 @@ websockets==16.0
     # via uvicorn
 wsproto==1.3.2
     # via simple-websocket
-yarl==1.23.0
+yarl==1.24.2
     # via aiohttp
