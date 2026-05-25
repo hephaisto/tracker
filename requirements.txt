@@ -32,7 +32,7 @@ click==8.4.1
     # via uvicorn
 docutils==0.22.4
     # via nicegui
-fastapi==0.136.1
+fastapi==0.136.3
     # via nicegui
 frozenlist==1.8.0
     # via
@@ -48,7 +48,7 @@ h11==0.16.0
     #   wsproto
 httpcore==1.0.9
     # via httpx
-httptools==0.7.1
+httptools==0.8.0
     # via uvicorn
 httpx==0.28.1
     # via nicegui
@@ -109,9 +109,9 @@ pyyaml==6.0.3
     # via uvicorn
 simple-websocket==1.1.0
     # via python-engineio
-sqlalchemy==2.0.49
+sqlalchemy==2.0.50
     # via tracker (src/pyproject.toml)
-starlette==1.0.1
+starlette==1.1.0
     # via
     #   fastapi
     #   nicegui
@@ -129,7 +129,7 @@ typing-inspection==0.4.2
     # via
     #   fastapi
     #   pydantic
-uvicorn==0.47.0
+uvicorn==0.48.0
     # via nicegui
 uvloop==0.22.1
     # via uvicorn
