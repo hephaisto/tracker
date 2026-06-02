@@ -4,7 +4,7 @@ aiofiles==25.1.0
     # via nicegui
 aiohappyeyeballs==2.6.2
     # via aiohttp
-aiohttp==3.13.5
+aiohttp==3.14.0
     # via
     #   nicegui
     #   python-socketio
@@ -52,7 +52,7 @@ httptools==0.8.0
     # via uvicorn
 httpx==0.28.1
     # via nicegui
-idna==3.17
+idna==3.18
     # via
     #   anyio
     #   httpx
@@ -101,7 +101,7 @@ python-engineio==4.13.2
     # via
     #   nicegui
     #   python-socketio
-python-multipart==0.0.29
+python-multipart==0.0.30
     # via nicegui
 python-socketio==5.16.2
     # via nicegui
@@ -111,7 +111,7 @@ simple-websocket==1.1.0
     # via python-engineio
 sqlalchemy==2.0.50
     # via tracker (src/pyproject.toml)
-starlette==1.2.0
+starlette==1.2.1
     # via
     #   fastapi
     #   nicegui
