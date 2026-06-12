@@ -111,7 +111,7 @@ simple-websocket==1.1.0
     # via python-engineio
 sqlalchemy==2.0.50
     # via tracker (src/pyproject.toml)
-starlette==1.3.0
+starlette==1.3.1
     # via
     #   fastapi
     #   nicegui
