@@ -14,7 +14,7 @@ annotated-doc==0.0.4
     # via fastapi
 annotated-types==0.7.0
     # via pydantic
-anyio==4.13.0
+anyio==4.14.0
     # via
     #   httpx
     #   starlette
@@ -103,7 +103,7 @@ python-engineio==4.13.2
     #   python-socketio
 python-multipart==0.0.32
     # via nicegui
-python-socketio==5.16.2
+python-socketio==5.16.3
     # via nicegui
 pyyaml==6.0.3
     # via uvicorn
