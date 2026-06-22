@@ -32,7 +32,7 @@ click==8.4.1
     # via uvicorn
 docutils==0.23
     # via nicegui
-fastapi==0.137.2
+fastapi==0.138.0
     # via nicegui
 frozenlist==1.8.0
     # via
@@ -97,7 +97,7 @@ python-dotenv==1.2.2
     # via
     #   nicegui
     #   uvicorn
-python-engineio==4.13.2
+python-engineio==4.13.3
     # via
     #   nicegui
     #   python-socketio
