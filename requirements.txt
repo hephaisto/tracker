@@ -32,13 +32,13 @@ click==8.4.2
     # via uvicorn
 docutils==0.23
     # via nicegui
-fastapi==0.138.1
+fastapi==0.138.2
     # via nicegui
 frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
-greenlet==3.5.2
+greenlet==3.5.3
     # via sqlalchemy
 h11==0.16.0
     # via
