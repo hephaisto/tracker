@@ -129,7 +129,7 @@ typing-inspection==0.4.2
     # via
     #   fastapi
     #   pydantic
-uvicorn==0.49.0
+uvicorn==0.50.2
     # via nicegui
 uvloop==0.22.1
     # via uvicorn
