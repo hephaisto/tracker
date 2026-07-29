@@ -32,7 +32,7 @@ click==8.4.2
     # via uvicorn
 docutils==0.23
     # via nicegui
-fastapi==0.140.13
+fastapi==0.141.0
     # via nicegui
 frozenlist==1.8.0
     # via
@@ -129,7 +129,7 @@ typing-inspection==0.4.2
     # via
     #   fastapi
     #   pydantic
-uvicorn==0.51.0
+uvicorn==0.52.0
     # via nicegui
 uvloop==0.22.1
     # via uvicorn
