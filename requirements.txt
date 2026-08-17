@@ -77,9 +77,9 @@ multidict==6.7.1
     # via
     #   aiohttp
     #   yarl
-nicegui==3.15.0
+nicegui==3.16.0
     # via tracker (src/pyproject.toml)
-orjson==3.11.9
+orjson==3.12.0
     # via nicegui
 propcache==0.5.2
     # via
@@ -97,7 +97,7 @@ python-dotenv==1.2.2
     # via
     #   nicegui
     #   uvicorn
-python-engineio==4.13.4
+python-engineio==4.13.5
     # via
     #   nicegui
     #   python-socketio
@@ -109,7 +109,7 @@ pyyaml==6.0.3
     # via uvicorn
 simple-websocket==1.1.0
     # via python-engineio
-sqlalchemy==2.0.51
+sqlalchemy==2.0.52
     # via tracker (src/pyproject.toml)
 starlette==1.6.0
     # via
@@ -125,11 +125,11 @@ typing-extensions==4.16.0
     #   pydantic-core
     #   sqlalchemy
     #   typing-inspection
-typing-inspection==0.4.3
+typing-inspection==0.4.4
     # via
     #   fastapi
     #   pydantic
-uvicorn==0.52.1
+uvicorn==0.52.3
     # via nicegui
 uvloop==0.22.1
     # via uvicorn
