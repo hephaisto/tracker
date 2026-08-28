@@ -21,7 +21,7 @@ anyio==4.14.2
     #   watchfiles
 attrs==26.1.0
     # via aiohttp
-bidict==0.23.1
+bidict==0.24.0
     # via python-socketio
 certifi==2026.7.22
     # via
