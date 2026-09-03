@@ -97,7 +97,7 @@ python-dotenv==1.2.3
     # via
     #   nicegui
     #   uvicorn
-python-engineio==4.13.5
+python-engineio==4.14.0
     # via
     #   nicegui
     #   python-socketio
