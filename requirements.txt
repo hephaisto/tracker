@@ -14,7 +14,7 @@ annotated-doc==0.0.5
     # via fastapi
 annotated-types==0.8.0
     # via pydantic
-anyio==4.14.2
+anyio==4.15.0
     # via
     #   httpx
     #   starlette
@@ -63,7 +63,7 @@ itsdangerous==2.2.0
     # via nicegui
 jinja2==3.1.6
     # via nicegui
-lxml==6.1.2
+lxml==6.1.3
     # via
     #   lxml-html-clean
     #   nicegui
