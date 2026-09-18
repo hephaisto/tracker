@@ -103,13 +103,13 @@ python-engineio==4.14.0
     #   python-socketio
 python-multipart==0.0.32
     # via nicegui
-python-socketio==5.16.4
+python-socketio==5.17.0
     # via nicegui
 pyyaml==6.0.3
     # via uvicorn
 simple-websocket==1.1.0
     # via python-engineio
-sqlalchemy==2.0.52
+sqlalchemy==2.0.53
     # via tracker (src/pyproject.toml)
 starlette==1.6.0
     # via
