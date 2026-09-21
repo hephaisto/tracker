@@ -52,7 +52,7 @@ httptools==0.8.0
     # via uvicorn
 httpx==0.28.1
     # via nicegui
-idna==3.19
+idna==3.20
     # via
     #   anyio
     #   httpx
@@ -73,15 +73,15 @@ markdown2==2.5.5
     # via nicegui
 markupsafe==3.0.3
     # via jinja2
-multidict==6.8.0
+multidict==6.9.0
     # via
     #   aiohttp
     #   yarl
-nicegui==3.16.0
+nicegui==3.17.0
     # via tracker (src/pyproject.toml)
 orjson==3.12.0
     # via nicegui
-propcache==0.5.2
+propcache==0.5.4
     # via
     #   aiohttp
     #   yarl
@@ -109,7 +109,7 @@ pyyaml==6.0.3
     # via uvicorn
 simple-websocket==1.1.0
     # via python-engineio
-sqlalchemy==2.0.53
+sqlalchemy==2.0.54
     # via tracker (src/pyproject.toml)
 starlette==1.6.0
     # via
@@ -143,5 +143,5 @@ websockets==17.1
     # via uvicorn
 wsproto==1.3.2
     # via simple-websocket
-yarl==1.24.5
+yarl==1.25.1
     # via aiohttp
