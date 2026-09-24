@@ -133,7 +133,7 @@ uvicorn==0.53.0
     # via nicegui
 uvloop==0.22.1
     # via uvicorn
-watchfiles==1.2.0
+watchfiles==1.3.0
     # via
     #   nicegui
     #   uvicorn
