@@ -80,7 +80,7 @@ propcache==0.5.4
     #   yarl
 pydantic==2.13.5
     # via fastapi
-pydantic-core==2.46.5
+pydantic-core==2.49.0
     # via
     #   nicegui
     #   pydantic
