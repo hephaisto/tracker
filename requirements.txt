@@ -4,7 +4,7 @@ aiofiles==25.1.0
     # via nicegui
 aiohappyeyeballs==2.7.1
     # via aiohttp
-aiohttp==3.14.4
+aiohttp==3.14.5
     # via
     #   nicegui
     #   python-socketio
@@ -78,9 +78,9 @@ propcache==0.5.4
     # via
     #   aiohttp
     #   yarl
-pydantic==2.14.0
+pydantic==2.14.1
     # via fastapi
-pydantic-core==2.50.0
+pydantic-core==2.50.1
     # via
     #   nicegui
     #   pydantic
