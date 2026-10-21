@@ -23,7 +23,7 @@ attrs==26.1.0
     # via aiohttp
 bidict==0.24.1
     # via python-socketio
-certifi==2026.7.22
+certifi==2026.10.18
     # via
     #   httpcore
     #   httpx
@@ -32,7 +32,7 @@ click==8.5.0
     # via uvicorn
 docutils==0.23
     # via nicegui
-fastapi==0.143.3
+fastapi==0.146.0
     # via nicegui
 frozenlist==1.8.0
     # via
@@ -104,7 +104,7 @@ simple-websocket==1.1.0
     # via python-engineio
 sqlalchemy==2.1.5
     # via tracker (src/pyproject.toml)
-starlette==1.8.0
+starlette==1.9.0
     # via
     #   fastapi
     #   nicegui
