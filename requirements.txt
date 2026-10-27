@@ -32,7 +32,7 @@ click==8.5.0
     # via uvicorn
 docutils==0.23
     # via nicegui
-fastapi==0.161.1
+fastapi==0.162.0
     # via nicegui
 frozenlist==1.8.0
     # via
@@ -66,7 +66,7 @@ markdown2==2.5.5
     # via nicegui
 markupsafe==3.0.4
     # via jinja2
-multidict==7.1.0
+multidict==7.2.0
     # via
     #   aiohttp
     #   yarl
@@ -104,7 +104,7 @@ simple-websocket==1.1.0
     # via python-engineio
 sqlalchemy==2.1.6
     # via tracker (src/pyproject.toml)
-starlette==1.9.0
+starlette==1.10.0
     # via
     #   fastapi
     #   nicegui
