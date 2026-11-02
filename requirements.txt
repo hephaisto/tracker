@@ -78,9 +78,9 @@ propcache==0.5.4
     # via
     #   aiohttp
     #   yarl
-pydantic==2.14.1
+pydantic==2.14.2
     # via fastapi
-pydantic-core==2.50.1
+pydantic-core==2.50.2
     # via
     #   nicegui
     #   pydantic
@@ -90,13 +90,13 @@ python-dotenv==1.2.4
     # via
     #   nicegui
     #   uvicorn
-python-engineio==4.14.0
+python-engineio==4.15.1
     # via
     #   nicegui
     #   python-socketio
 python-multipart==0.0.32
     # via nicegui
-python-socketio==5.17.0
+python-socketio==5.17.1
     # via nicegui
 pyyaml==6.0.3
     # via uvicorn
@@ -133,7 +133,7 @@ watchfiles==1.3.0
     #   uvicorn
 webencodings==0.6.1
     # via tinycss2
-websockets==17.3
+websockets==17.4
     # via uvicorn
 wsproto==1.3.2
     # via simple-websocket
