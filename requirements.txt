@@ -70,7 +70,7 @@ multidict==7.2.1
     # via
     #   aiohttp
     #   yarl
-nicegui==3.18.0
+nicegui==3.19.0
     # via tracker (src/pyproject.toml)
 orjson==3.13.0
     # via nicegui
@@ -96,7 +96,7 @@ python-engineio==4.15.1
     #   python-socketio
 python-multipart==0.0.33
     # via nicegui
-python-socketio==5.18.0
+python-socketio==5.18.1
     # via nicegui
 pyyaml==6.0.3
     # via uvicorn
