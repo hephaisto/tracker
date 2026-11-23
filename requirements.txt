@@ -10,7 +10,7 @@ aiohttp==3.14.5
     #   python-socketio
 aiosignal==1.4.0
     # via aiohttp
-annotated-doc==0.0.6
+annotated-doc==0.0.7
     # via fastapi
 annotated-types==0.8.0
     # via pydantic
@@ -32,7 +32,7 @@ click==8.5.1
     # via uvicorn
 docutils==0.23
     # via nicegui
-fastapi==0.163.1
+fastapi==0.165.0
     # via nicegui
 frozenlist==1.8.0
     # via
@@ -78,9 +78,9 @@ propcache==0.5.4
     # via
     #   aiohttp
     #   yarl
-pydantic==2.14.3
+pydantic==2.14.4
     # via fastapi
-pydantic-core==2.50.4
+pydantic-core==2.50.5
     # via
     #   nicegui
     #   pydantic
