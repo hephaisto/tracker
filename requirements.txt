@@ -23,7 +23,7 @@ attrs==26.1.0
     # via aiohttp
 bidict==0.24.1
     # via python-socketio
-certifi==2026.10.23
+certifi==2026.11.20
     # via
     #   httpcore
     #   httpx
@@ -98,7 +98,7 @@ python-multipart==0.0.34
     # via nicegui
 python-socketio==5.18.1
     # via nicegui
-pyyaml==6.0.3
+pyyaml==6.0.4
     # via uvicorn
 simple-websocket==1.1.0
     # via python-engineio
